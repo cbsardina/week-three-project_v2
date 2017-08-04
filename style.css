@@ -1,0 +1,72 @@
+body {
+    font-family: 'Noto Serif', serif;
+    line-height: 1.8;
+    margin: 0;
+    background-color: rgb(201, 201, 201);
+    color: #fff;
+}
+.calcBody {
+  width: 408px;
+  background-color: #fff;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.screen {
+  width: 304px;
+  height: 125px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  margin: 1px;
+  padding: 0;
+  display: flex;
+}
+#screen input {
+  text-align: right;
+}
+.button {
+  width: 100px;
+  height: 125px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 1px;
+  cursor: pointer;
+}
+/*.button:hover {
+  background: gray;
+  transition: .3s;
+	color: white;
+}*/
+.button:focus, #screen:focus {
+  outline-style: none;
+}
+.operator{
+  opacity: .8;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .8;
+    color: #000;
+    transition: .3s;
+}
+.eval:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .8;
+    color: #fff;
+    background-color: blue;
+    transition: .3s;
+}
+.operator:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: .8;
+    background-color: red;
+    color: #fff;
+    transition: .3s;
+}
