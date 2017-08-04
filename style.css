@@ -23,9 +23,6 @@ body {
   padding: 0;
   display: flex;
 }
-#screen input {
-  text-align: right;
-}
 .button {
   width: 100px;
   height: 125px;
@@ -39,12 +36,7 @@ body {
   margin: 1px;
   cursor: pointer;
 }
-/*.button:hover {
-  background: gray;
-  transition: .3s;
-	color: white;
-}*/
-.button:focus, #screen:focus {
+.button:focus {
   outline-style: none;
 }
 .operator{
