@@ -6,10 +6,6 @@ for (let i in keys){
     let keyInput = screen.innerHTML;
     let equation = keyInput;
     let keyValue = this.innerHTML;
-    let oper = document.querySelectorAll('.operator');
-    let operators = oper.innerHTML;
-
-    event.preventDefault();     //CHECK ON THIS
 
     screen.innerHTML += keyValue;
 
@@ -18,11 +14,8 @@ for (let i in keys){
     }
     else if (keyValue === '=') {
       equation = keyInput;
-      screen.innerHTML = eval(equation);
-
+      screen.innerHTML = Math.round((eval(equation)) * 10000) / 10000;
     }
-
-
 
     console.log(keys[i]);
     console.log(keyInput);
